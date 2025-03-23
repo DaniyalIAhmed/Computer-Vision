@@ -15,7 +15,7 @@ cv.waitKey(0) #wait for infinite time for a key to be pressed on the keyboard
 ```
 capture = cv.VideoCapture('path/to/video' || 0) #Returns image as a 2D matrix
 while True:
-    isTrue, frame = capture.read() #Reads frame but frame and returns if a frame is read successfully along with the frame
+    isTrue, frame = capture.read() #Reads frame by frame and returns if a frame is read successfully along with the frame
     cv.imshow('Video', frame)
     if cv.waitKey(20) & 0xFF==ord('d'):
         break
